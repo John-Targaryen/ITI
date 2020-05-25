@@ -1,0 +1,80 @@
+*{
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+body{
+width: 100%;
+height: 100%;
+background: #ecf0f1;
+transition: padding-top 0.5s ease;
+}
+header{
+width: 100%;
+height: 60px;
+background: #292c2f;
+text-align: center;
+top: 0;
+overflow: hidden;
+transition: all 0.5s ease;
+}
+header nav{
+bottom: 0;
+height: 60px;
+line-height: 60px;
+width: 100%;
+background:#111;
+border-bottom: 8px solid green;
+}
+header nav a{
+color: white;
+padding: 10px 15px;
+line-height:1;
+text-decoration: none;
+font-family: doppio one;
+display: inline;
+font-size: 15px;
+}
+header nav a:hover{
+background: #CACBCA;
+color: #0E1E0F;
+text-decoration: none;
+font-size: 15px;
+}
+h1{
+  font-size: 92px;
+  color: #f1ebe5;
+  background:#28a745;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 5px;
+}
+.presentacion{
+margin-top: -100px;
+opacity: 0.8;
+border: 1px solid silver;
+}
+
+@media only screen and (max-width: 580px) {
+header{
+height: 245px; 
+}
+header nav{
+height: 245px;
+line-height: 60px;
+}
+header nav a{
+width: 50%;
+display: inline-table;
+padding: 10px;
+}
+body{
+padding-top: 0px;
+}
+body.sticky-header header{
+height: 0px;
+}
+}
